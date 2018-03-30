@@ -8,6 +8,6 @@ import boto3
 def deleteInstance(Id):
     ec2=boto3.resource('ec2')
     instance=ec2.Instance(Id)
-    return instance.terminate
+    return instance.terminate()
 
 
